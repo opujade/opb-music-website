@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 function App() {
 	const [showNavBar, setShowNavBar] = useState(false);
 	const [showHome, setShowHome] = useState(false);
+	const [page, setPage] = useState("home");
 
 	useEffect(() => {
 		const timerNavBar = setTimeout(() => {
@@ -22,7 +23,7 @@ function App() {
 
 	return (
 		<>
-			<NavBar showNavBar={showNavBar} />
+			<NavBar showNavBar={showNavBar} setPage={setPage} />
 			<Home showHome={showHome} />
 		</>
 	);
