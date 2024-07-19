@@ -16,22 +16,22 @@ export const NavBar = () => {
 				<div className="flex justify-end items-center gap-3 order-2 md:order-1 md:mt-0 mt-8 flex-wrap">
 					<SocialMediaIcon
 						link="https://open.spotify.com/intl-es/artist/2AT7fejvAcAuuF4OIo0cFr?si=hRImq0PfRiuErs7dW1UDPQ"
-						src="src/assets/img/spotify-logo.png"
+						src="/assets/img/spotify-logo.png"
 						altText="Spotify Logo"
 					/>
 					<SocialMediaIcon
 						link="https://www.instagram.com/opujade"
-						src="src/assets/img/instagram-logo.png"
+						src="/assets/img/instagram-logo.png"
 						altText="Instagram Logo"
 					/>
 					<SocialMediaIcon
 						link="https://sayopb.bandcamp.com/"
-						src="src/assets/img/bandcamp-logo.png"
+						src="/assets/img/bandcamp-logo.png"
 						altText="Bandcamp Logo"
 					/>
 					<SocialMediaIcon
 						link="https://www.youtube.com/@sayopb"
-						src="src/assets/img/youtube-logo.png"
+						src="/assets/img/youtube-logo.png"
 						altText="Youtube Logo"
 					/>
 				</div>
@@ -47,7 +47,7 @@ export const NavBar = () => {
 				className={`z-50 fixed start-0 flex flex-col h-screen justify-start md:justify-center p-2 md:p-7 animate-slide-in-logo`}
 			>
 				<img
-					src="src\assets\img\opb-logo.png"
+					src="/assets/img/opb-logo.png"
 					alt="OPB Logo"
 					className="w-20 md:w-52 h-auto cursor-pointer hover:drop-shadow-yellow duration-300"
 					onClick={navigateHome}

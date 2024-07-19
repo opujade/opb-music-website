@@ -18,8 +18,10 @@ export const Video = () => {
 	return (
 		<div className="w-1/4 h-full flex-shrink-0 bg-image-3 bg-cover bg-no-repeat overflow-auto">
 			<div className="w-full min-h-screen py-16 flex flex-col mx-auto justify-center items-center">
-				{youtubeVideos.map((info) => {
-					return <YoutubeEmbed link={info.link} title={info.title} />;
+				{youtubeVideos.map((info, index) => {
+					return (
+						<YoutubeEmbed key={index} link={info.link} title={info.title} />
+					);
 				})}
 			</div>
 		</div>
