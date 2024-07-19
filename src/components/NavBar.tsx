@@ -36,7 +36,7 @@ export const NavBar = () => {
 					/>
 				</div>
 				<nav className="order-1 z-50 md:order-2 flex flex-col">
-					<MenuListItem option={"music"} />
+					<MenuListItem option={"musica"} />
 					<MenuListItem option={"video"} />
 					<MenuListItem option={"photo"} />
 					<MenuListItem option={"tour"} />

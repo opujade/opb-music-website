@@ -6,12 +6,11 @@ export const YoutubeEmbed = ({
 	title: string;
 }) => (
 	<>
-		<h3 className="p-5 font-century-gothic font-boldfont-century-gothic font-bold uppercase text-white tracking-widest">
+		<h3 className=" md:p-5 font-century-gothic font-boldfont-century-gothic font-bold uppercase text-white tracking-widest">
 			{title}
 		</h3>
 		<iframe
-			width="560"
-			height="315"
+			className="w-full md:w-1/2 aspect-video"
 			src={link}
 			title={title}
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
