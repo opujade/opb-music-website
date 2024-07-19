@@ -1,8 +1,4 @@
-import { useAppSelector } from "../app/hooks";
-
 export const Home = () => {
-	const page = useAppSelector((state) => state.page.value);
-
 	return (
 		<div className="w-full h-screen">
 			<img

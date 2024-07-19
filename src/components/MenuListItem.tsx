@@ -10,7 +10,7 @@ export const MenuListItem = ({ option }: { option: string }) => {
 
 	return (
 		<button
-			className="font-century-gothic font-bold uppercase text-white tracking-widest text-end hover:text-primary md:hover:-translate-x-10 hover:drop-shadow-yellow text-xl cursor-pointer duration-500 pb-2"
+			className="z-50 font-century-gothic font-bold uppercase text-white tracking-widest text-end hover:text-primary md:hover:-translate-x-10 hover:drop-shadow-yellow text-xl cursor-pointer duration-500 pb-2"
 			onClick={handleClick}
 		>
 			{option}

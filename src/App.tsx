@@ -11,7 +11,7 @@ function App() {
 		<>
 			<NavBar />
 			<div
-				className={`h-[200%] w-full flex flex-col duration-[2000ms] ease-in-out ${
+				className={`h-[200%] w-screen flex flex-col duration-[2000ms] ease-in-out overflow-hidden ${
 					page === "home" ? "translate-y-0" : "-translate-y-1/2"
 				}`}
 			>
