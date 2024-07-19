@@ -2,6 +2,7 @@ import { Footer } from "./components/Footer";
 import { NavBar } from "./components/NavBar";
 import { Home } from "./pages/Home";
 import { useEffect, useState } from "react";
+import { Music } from "./pages/Music";
 
 function App() {
 	const [showNavBar, setShowNavBar] = useState(false);
@@ -23,11 +24,10 @@ function App() {
 
 	return (
 		<>
-			<main className="overflow-hidden">
-				<NavBar showNavBar={showNavBar} />
-				<Home showHome={showHome} />
-				<Footer />
-			</main>
+			<NavBar showNavBar={showNavBar} />
+			<Home showHome={showHome} />
+			<Music />
+			<Footer />
 		</>
 	);
 }
