@@ -15,9 +15,6 @@ export default {
       fontFamily: {
         "century-gothic": ["Century Gothic", "sans-serif"]
       },
-      colors: {
-        "main-yellow": "#fedd59"
-      },
       dropShadow: {
         'yellow': '0 0 10px rgba(254, 221, 89, 0.30)',
       },
@@ -25,6 +22,19 @@ export default {
         "xxs": ".6rem"
       }
     },
+  },
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          "primary": "#fedd59",
+          "secondary": "#f6d860",
+          "accent": "#37cdbe",
+          "neutral": "#3d4451",
+          "base-100": "#060409",
+        },
+      },
+    ],
   },
   plugins: [
     require('daisyui'),
