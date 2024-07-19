@@ -1,11 +1,18 @@
+import { Dispatch } from "react";
 import { MenuListItem } from "./MenuListItem";
 import { SocialMediaIcon } from "./SocialMediaIcon";
 
-export const NavBar = ({ showNavBar }: { showNavBar: boolean }) => {
+export const NavBar = ({
+	showNavBar,
+	setPage,
+}: {
+	showNavBar: boolean;
+	setPage: Dispatch<React.SetStateAction<string>>;
+}) => {
 	return (
 		<>
 			<div
-				className={`fixed end-0 flex flex-col h-screen justify-start md:justify-between font-century-gothic font-bold uppercase text-white tracking-widest text-end p-2 md:p-7 ${
+				className={`fixed end-0 flex flex-col h-screen justify-start md:justify-between p-2 md:p-7 ${
 					showNavBar ? "translate-x-0" : "translate-x-full"
 				} ease-in-out duration-[2000ms]`}
 			>
@@ -31,13 +38,13 @@ export const NavBar = ({ showNavBar }: { showNavBar: boolean }) => {
 						altText="Youtube Logo"
 					/>
 				</div>
-				<ul className="order-1 md:order-2">
+				<ul className="order-1 md:order-2 flex flex-col">
 					<MenuListItem option={"Music"} />
 					<MenuListItem option={"Video"} />
 					<MenuListItem option={"Photo"} />
 					<MenuListItem option={"Tour"} />
 				</ul>
-				<div className="order-3 fixed bottom-0 md:relative md:p-0 p-7">
+				<div className="order-3 fixed bottom-0 md:relative md:p-0 p-7 font-century-gothic font-bold uppercase text-white tracking-widest text-end">
 					<p className="text-xxs text-gray-300">© 2024 O.P.B.</p>
 					<p className="text-xxs text-gray-300">Developed by </p>
 					<p className="text-xxs text-gray-300">
