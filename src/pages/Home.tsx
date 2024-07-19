@@ -1,17 +1,19 @@
 import { useAppSelector } from "../app/hooks";
 
-export const Home = ({ showHome }: { showHome: boolean }) => {
+export const Home = () => {
 	const page = useAppSelector((state) => state.page.value);
 
 	return (
-		<>
-			<div
-				className={`fixed min-h-screen min-w-full bg-main-bg-image ease-in-out bg-no-repeat bg-cover bg-center transition duration-[1500ms] ${
-					showHome ? "opacity-100" : "opacity-0"
+		<div
+			className={`fixed z-10 min-h-screen min-w-full bg-image-1 bg-no-repeat bg-cover bg-center animate-opacity-animation
+				${
+					page === "home"
+						? "animate-slide-in-home"
+						: page === ""
+						? ""
+						: "animate-slide-out-home"
 				}
-				${page === "home" ? "translate-y-0 z-10" : "-translate-y-full z-0"}
 				`}
-			></div>
-		</>
+		></div>
 	);
 };

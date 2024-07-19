@@ -4,7 +4,7 @@ import { RootState } from '../../app/store'
 
 // Define the initial state using that type
 const initialState = {
-  value: "home"
+  value: ""
 }
 
 export const pageSlice = createSlice({

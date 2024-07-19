@@ -3,7 +3,7 @@ import { SocialMediaIcon } from "./SocialMediaIcon";
 import { useAppDispatch } from "../app/hooks";
 import { setPage } from "../features/slices/pageSlice";
 
-export const NavBar = ({ showNavBar }: { showNavBar: boolean }) => {
+export const NavBar = () => {
 	const dispatch = useAppDispatch();
 
 	const navigateHome = () => {
@@ -12,11 +12,7 @@ export const NavBar = ({ showNavBar }: { showNavBar: boolean }) => {
 
 	return (
 		<>
-			<div
-				className={`z-50 fixed end-0 flex flex-col h-screen justify-start md:justify-between p-2 md:p-7 ${
-					showNavBar ? "translate-x-0" : "translate-x-full"
-				} ease-in-out duration-[2000ms]`}
-			>
+			<div className="z-50 fixed end-0 flex flex-col h-screen justify-start md:justify-between p-2 md:p-7 animate-slide-in-navbar">
 				<div className="flex justify-end items-center gap-3 order-2 md:order-1 md:mt-0 mt-8 flex-wrap">
 					<SocialMediaIcon
 						link="https://open.spotify.com/intl-es/artist/2AT7fejvAcAuuF4OIo0cFr?si=hRImq0PfRiuErs7dW1UDPQ"
@@ -48,9 +44,7 @@ export const NavBar = ({ showNavBar }: { showNavBar: boolean }) => {
 				<div className="order-3"></div>
 			</div>
 			<div
-				className={`z-50 fixed start-0 flex flex-col h-screen justify-start md:justify-center p-2 md:p-7 ${
-					showNavBar ? "translate-x-0" : "-translate-x-full"
-				} ease-in-out duration-[2000ms]`}
+				className={`z-50 fixed start-0 flex flex-col h-screen justify-start md:justify-center p-2 md:p-7 animate-slide-in-logo`}
 			>
 				<img
 					src="src\assets\img\opb-logo.png"
