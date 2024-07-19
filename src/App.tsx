@@ -1,11 +1,11 @@
-import { NavBar } from "./pages/components/NavBar";
+import { Footer } from "./components/Footer";
+import { NavBar } from "./components/NavBar";
 import { Home } from "./pages/Home";
 import { useEffect, useState } from "react";
 
 function App() {
 	const [showNavBar, setShowNavBar] = useState(false);
 	const [showHome, setShowHome] = useState(false);
-	const [page, setPage] = useState("home");
 
 	useEffect(() => {
 		const timerNavBar = setTimeout(() => {
@@ -23,8 +23,11 @@ function App() {
 
 	return (
 		<>
-			<NavBar showNavBar={showNavBar} setPage={setPage} />
-			<Home showHome={showHome} />
+			<main className="overflow-hidden">
+				<NavBar showNavBar={showNavBar} />
+				<Home showHome={showHome} />
+				<Footer />
+			</main>
 		</>
 	);
 }
