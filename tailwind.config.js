@@ -12,9 +12,9 @@ export default {
     },
     extend: {
       backgroundImage: {
-        "image-1": "url('/assets/img/bg-image-1.JPG')",
-        "image-2": "url('/assets/img/bg-image-2.jpg')",
-        "image-3": "url('/assets/img/bg-image-3.jpg')"
+        "image-1": "url('./public/assets/img/bg-image-1.JPG')",
+        "image-2": "url('./public/assets/img/bg-image-2.jpg')",
+        "image-3": "url('./public/assets/img/bg-image-3.jpg')"
       },
       fontFamily: {
         "century-gothic": ["Century Gothic", "sans-serif"]
